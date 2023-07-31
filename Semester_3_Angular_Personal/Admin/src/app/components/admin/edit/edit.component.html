@@ -1,0 +1,83 @@
+<div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Admin Edit</h1>
+        </div>
+        <!-- /.col -->
+        <div class="col-sm-6">
+          <!-- Left navbar links -->
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a routerLink="/dashboard">Home</a></li>
+            <li class="breadcrumb-item active">Admin Edit</li>
+          </ol>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+  <!-- Content -->
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <ng-container *ngIf="editAccountForm != null">
+          <form [formGroup]="editAccountForm" (ngSubmit)="save()">
+            <table border="0" cellspacing="0" cellpadding="5">
+              <tr>
+                <td>First Name</td>
+                <td><input type="text" pInputText formControlName="firstName"/></td>
+              </tr>
+              <tr>
+                <td>Last Name</td>
+                <td><input type="text" pInputText formControlName="lastName"/></td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td><input type="email" pInputText formControlName="email"/></td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td><input type="text" pInputText formControlName="phone"/></td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td>
+                  <label *ngFor="let option of genderOptions" style="padding-right: 10px;">
+                    <input type="checkbox" [value]="option" (change)="onGenderCheckboxChange(option)" [checked]="option === gender.value" />
+                    {{ option }}
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>Role</td>
+                <td>
+                  <p-selectButton [options]="roleOptions" formControlName="roleId" optionLabel="value" optionValue="roleId"></p-selectButton>
+                </td>
+              </tr>
+              <tr>
+                <td>Status</td>
+                <td><input type="checkbox" formControlName="status"/></td>
+              </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td>
+                      <button pButton pRipple label="Submit" class="p-button-success" style="float: right"></button>
+                  </td>
+              </tr>
+            </table>
+            
+          </form>
+          <br>
+          <h3>Upload a Photo</h3>
+          Avatar <p-fileUpload chooseLabel="Choose" accept="image/*" [showUploadButton]="false" (onSelect)="selectFile($event.files)"></p-fileUpload>
+          <br>
+          <button pButton pRipple label="Upload" class="p-button-success" (click)="upload()"></button>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+  
