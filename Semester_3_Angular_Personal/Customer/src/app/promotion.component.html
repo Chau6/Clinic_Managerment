@@ -1,0 +1,22 @@
+<div class="title">
+  <span class="title_icon">
+    <img src="assets/images/bullet4.gif" alt="" title="" /> </span
+  >Promotions
+</div>
+<div class="new_prod_box" *ngFor="let product of products">
+  <li><a href="#">{{ product.productName }}</a></li>
+  <div class="new_prod_bg">
+    <!-- giữ span lại -->
+    <span class="new_icon">
+      <img src="assets/images/promo_icon.gif" alt="" title="" />
+    </span>
+    <a href="details.html">
+      <img
+        src="{{ product.image }}"
+        width="96px" height="98px"
+        border="0"
+      />
+    </a>
+    <input type="button" class="more" value="Add To Cart" (click)="add(product.productId)">
+  </div>
+</div>

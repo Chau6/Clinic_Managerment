@@ -1,0 +1,113 @@
+<div id="wrap">
+  <div class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/custom/logo.jpg" width="100px" height="80px" alt="" title="" border="0" />
+      </a>
+    </div>
+    <div id="menu">
+      <ul>
+        <li routerLinkActive="selected">
+          <a [routerLink]="['/home']">Home</a>
+        </li>
+        <li routerLinkActive="selected">
+          <a [routerLink]="['/aboutUs']">About Us</a>
+        </li>
+        <li routerLinkActive="selected">
+          <a [routerLink]="['/cart']">Cart</a>
+        </li>
+        <li routerLinkActive="selected">
+          <a [routerLink]="['/blog']">Blogs</a>
+        </li>
+        <li routerLinkActive="selected">
+          <a [routerLink]="['/my_account']">My Account</a>
+        </li>
+        <li routerLinkActive="selected">
+          <a [routerLink]="['/contact']">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="center_content">
+    <div class="left_content">
+      <!-- Home -->
+      <router-outlet></router-outlet>
+    </div>
+    <!--end of left content-->
+
+    <div class="right_content">
+      <div class="languages_box">
+        <span class="red">Welcome:</span>{{ email }}
+      </div>
+      <ng-container *ngIf="email != null">
+        <div class="currency"> 
+          <span class="red">Option: </span><input type="button" value="Logout" (click)="logout()"/>
+        </div>
+      </ng-container>
+
+      <div class="cart">
+        <div class="title">
+          <span class="title_icon">
+            <img src="assets/images/cart.gif" alt="" title="" /> </span
+          >My cart
+        </div>
+        <!-- <div class="home_cart_content">
+          3 x items | <span class="red">TOTAL: 100$</span>
+        </div> -->
+        <a routerLink="cart" class="view_cart">view cart</a>
+      </div>
+
+      <div class="title">
+        <span class="title_icon">
+          <img src="assets/images/bullet3.gif" alt="" title="" /> </span
+        >About Our Shop
+      </div>
+      <div class="about">
+        <p>
+          <img src="assets/images/custom/aboutUs.jpg" alt="" title="" class="right" />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud.
+        </p>
+      </div>
+
+      <div class="right_box">
+        <promotions></promotions>
+      </div>
+
+      <div class="right_box">
+
+        <categories></categories>
+
+        <div class="title">
+          <span class="title_icon">
+            <img src="assets/images/bullet6.gif" alt="" title="" /> </span
+          >Partners
+        </div>
+
+        <ul class="list">
+          <li>Truong Tan Chau</li>
+          <li>Khuu Nhat Tin</li>
+          <li>Nguyen Minh Thanh</li>
+          <li>Pham Thanh Tuyet</li>
+          <li>Bui Thien Trang</li>
+        </ul>
+      </div>
+    </div>
+    <!--end of right content-->
+
+    <div class="clear"></div>
+  </div>
+  <!--end of center content-->
+
+  <div class="footer">
+    <div class="left_footer">
+      <img src="assets/images/custom/logo.jpg" width="50" height="50"/><br />
+    </div>
+    <div class="right_footer">
+      <a href="#">home</a> <a href="#">about us</a> <a href="#">services</a>
+      <a href="#">privacy policy</a> <a href="#">contact us</a>
+    </div>
+  </div>
+</div>

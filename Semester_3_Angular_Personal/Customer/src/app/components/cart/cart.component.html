@@ -1,0 +1,56 @@
+<div class="title">
+  <span class="title_icon"
+    ><img src="images/bullet1.gif" alt="" title="" /></span
+  >My cart
+</div>
+
+<div class="feat_prod_box_details">
+  <table class="cart_table">
+    <tr class="cart_title">
+      <th>Action</th>
+      <th>Product name</th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Total</th>
+    </tr>
+
+    <ng-container *ngIf="carts != null">
+      <tr *ngFor="let cart of carts">
+        <td><input type="button" value="Delete" (click)="delete(cart.cartId)"><input type="button" value="Sub" (click)="sub(cart.cartId)"><input type="button" value="Add" (click)="add(cart.cartId)"></td>
+        <td>{{ cart.productName }}</td>
+        <td>{{ cart.productPrice }}</td>
+        <td>{{ cart.quantity }}</td>
+        <td>{{ cart.quantity * cart.productPrice }}</td>
+      </tr>
+    </ng-container>
+
+    <tr>
+      <td colspan="4" class="cart_total">
+        <span class="red">TOTAL SHIPPING:</span>
+      </td>
+      <td>10$</td>
+    </tr>
+
+    <tr>
+      <td colspan="4" class="cart_total"><span class="red">TOTAL:</span></td>
+      <td>{{ totalPrice }}$</td>
+    </tr>
+  </table>
+  <form method="post" action="{{ PostUrl }}">
+    <input type="hidden" name="upload" value="1" />
+    <input type="hidden" name="return" value="{{ ReturnUrl }}" />
+    <input type="hidden" name="cmd" value="_cart" />
+    <input type="hidden" name="business" value="{{ Business }}" />
+
+    <ng-container *ngFor="let cart of carts; let i = index">
+      <input type="hidden" name="item_number_{{ i + 1 }}" value="{{ cart.cartId }}" />
+      <input type="hidden" name="item_name_{{ i + 1 }}" value="{{ cart.productName }}" />
+      <input type="hidden" name="amount_{{ i + 1 }}" value="{{ cart.productPrice }}" />
+      <input type="hidden" name="quantity_{{ i + 1 }}" value="{{ cart.quantity }}" />
+    </ng-container>
+
+    <input type="submit" class="checkout" value="Checkout" />
+  </form>
+</div>
+
+<div class="clear"></div>
