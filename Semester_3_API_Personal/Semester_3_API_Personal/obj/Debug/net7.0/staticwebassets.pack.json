@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\28822896fe504984ba3b8527c9a777af.jpg",
+      "PackagePath": "staticwebassets\\images\\28822896fe504984ba3b8527c9a777af.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\452183de79a94e5f8e2913fceef1d403.png",
+      "PackagePath": "staticwebassets\\images\\452183de79a94e5f8e2913fceef1d403.png"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\abc.jpg",
+      "PackagePath": "staticwebassets\\images\\abc.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\abc1.jpg",
+      "PackagePath": "staticwebassets\\images\\abc1.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\c6f89658def847229742878175accd64.jpg",
+      "PackagePath": "staticwebassets\\images\\c6f89658def847229742878175accd64.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\df139573bc374a34935653b6c3bba9ea.jpg",
+      "PackagePath": "staticwebassets\\images\\df139573bc374a34935653b6c3bba9ea.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\f5699b3b3831439199964484eaa80e7c.jpg",
+      "PackagePath": "staticwebassets\\images\\f5699b3b3831439199964484eaa80e7c.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\no_image.jpg",
+      "PackagePath": "staticwebassets\\images\\no_image.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\product1.jpg",
+      "PackagePath": "staticwebassets\\images\\product1.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\product2.jpg",
+      "PackagePath": "staticwebassets\\images\\product2.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\product3.jpg",
+      "PackagePath": "staticwebassets\\images\\product3.jpg"
+    },
+    {
+      "Id": "D:\\Chau_folder\\NetCore\\Semester_3_API_Personal\\Semester_3_API_Personal\\wwwroot\\images\\product4.jpg",
+      "PackagePath": "staticwebassets\\images\\product4.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Semester_3_API_Personal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Semester_3_API_Personal.props",
+      "PackagePath": "build\\Semester_3_API_Personal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Semester_3_API_Personal.props",
+      "PackagePath": "buildMultiTargeting\\Semester_3_API_Personal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Semester_3_API_Personal.props",
+      "PackagePath": "buildTransitive\\Semester_3_API_Personal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

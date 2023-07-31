@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Semester_3_API_Personal.props" />
+</Project>
